@@ -10,7 +10,7 @@ const Board = () => {
 
     useEffect(() => console.log(port), []);
     
-    const [todos, setTodos, {isLoading, isConnected}] = useWebSocketState(`ws://localhost:${port}`, 250);
+    const [todos, setTodos, {isLoading, isConnected}] = useWebSocketState(`ws://192.168.100.150:${port}`, 250);
 
     return (
         <div className="board">
